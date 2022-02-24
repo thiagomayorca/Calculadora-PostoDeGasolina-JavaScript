@@ -1,0 +1,40 @@
+<!doctype>
+<html lang="pt-br">
+<head>
+<title>Média</title>
+<meta charset="utf-8">
+</head>
+<body> 
+<script>
+//Desenvolva um algoritmo que calcule 
+//o quanto um cliente de um posto de gasolina
+// irá pagar de acordo com a opção do combustível escolhido e a quantidade de litros comprados. Utilize os dados da tabela para desenvolver o algoritmo.
+//
+//	| CÓDIGO |  COMBUSTÍVEL  |  PREÇO  |
+//	|A       |Álcool         |  5,56/L |
+//	|G       |Gasolina       |  7,56/L |
+//	|D       | Diesel        |  4,81/L |
+//Repita o procedimento para 2 clientes e no final mostre:
+//Total= qtdl*valor
+//Informe o combustível A,G,D e a quantidade litros abastecidos
+valor=0; vp=0;
+for (c=1;c<=3;c++){
+    var ql = prompt("Quantidade de Litros:");
+    ql = parseFloat(ql);
+    var comb = prompt("Combustível A-alcool, G-Gasolina, D-Diesel:");
+    comb = comb;
+    if (comb=="A"){
+        valor=5.56;
+    }else
+    if (comb=="D"){
+        valor=4.81;
+    }else
+    if (comb=="G"){
+        valor=7.56;
+    }
+    vp=ql*valor;
+    document.write("Valor a pagar:"+vp+"<br>");
+}
+</script>
+</body>
+</html>
